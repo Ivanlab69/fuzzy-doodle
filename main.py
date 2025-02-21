@@ -3,6 +3,22 @@ import shutil
 import subprocess
 import sys
 
+def print_banner():
+    banner = """
+  __                         _____                   _             _ 
+ / _|_   _ _________   _    |_   _|__ _ __ _ __ ___ (_)_ __   __ _| |
+| |_| | | |_  /_  / | | |_____| |/ _ \ '__| '_ ` _ \| | '_ \ / _` | |
+|  _| |_| |/ / / /| |_| |_____| |  __/ |  | | | | | | | | | | (_| | |
+|_|  \__,_/___/___|\__, |     |_|\___|_|  |_| |_| |_|_|_| |_|\__,_|_|
+                   |___/                                             
+    """
+    print(banner)
+
+if __name__ == "__main__":
+    print_banner()
+    # Your existing code here 
+
+
 def run_shell():
     while True:
         command = input("$~ ")
