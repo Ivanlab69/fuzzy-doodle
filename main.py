@@ -18,7 +18,6 @@ if __name__ == "__main__":
     print_banner()
     # Your existing code here 
 
-
 def run_shell():
     while True:
         command = input("$~ ")
@@ -85,6 +84,10 @@ def run_shell():
         elif command.startswith("nslookup"):
             domain = command[9:].strip() or "google.com"
             subprocess.run(["nslookup", domain], check=True)
+
+        # Command to open Echoflux (2).py
+        elif command == "echoflux":
+            subprocess.run(["python", "Echoflux (2).py"], check=True)
 
         # For other system commands (like `ls`, `ping`, etc.)
         else:
